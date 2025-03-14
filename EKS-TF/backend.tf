@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
-    bucket         = "terraform-bucketv25"
+    bucket         = "terraform-bucketv29"
     region         = "ap-south-1"
     key            = "Chatbot-UI/EKS-TF/terraform.tfstate"
     dynamodb_table = "Lock-Files"
