@@ -1,8 +1,8 @@
 resource "aws_instance" "web" {
-  ami                    = "ami-09b0a86a2c84101e1" 
+  ami                    = "ami-023a307f3d27ea427" 
   instance_type          = "t2.large"
   subnet_id              = aws_subnet.Jenkins-subnet.id
-  key_name               = "ubuntu-node-kp" 
+  key_name               = "nodekey" 
   vpc_security_group_ids = [aws_security_group.Jenkins-VM-SG.id]
   user_data              = file("installations.sh")
 
